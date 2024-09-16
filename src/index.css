@@ -35,21 +35,3 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   font-family: 'Cairo', sans-serif;
 }
 
-/* @keyframes fadeInOut {
-  0% {
-    opacity: 1;
-    transform: translateY(10px); 
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0); 
-  }
-}
-
-.animate-fade-in-out {
-  animation: fadeInOut 4s ease-in-out infinite; 
-} */

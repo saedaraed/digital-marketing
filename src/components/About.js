@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className={`bg-custom-dark flex justify-center items-center py-16 px-8 font-hind ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
       <div className="bg-white max-w-6xl mx-auto flex flex-col md:flex-row items-center h-auto md:h-[704px]">
-        {/* Left Side - Text Section */}
+       
         <div className="px-4 sm:px-8 md:px-16 h-full w-full md:w-1/2 flex flex-col justify-center text-left py-8 md:py-0">
           <h2 className="text-pink-500 text-xl font-bold mb-7 border-b-4 border-gray-400 inline-block w-max">
           {t('aboutMe')}
@@ -22,10 +22,9 @@ const About = () => {
           </p>
         </div>
 
-        {/* Right Side - Image Section */}
         <div className="relative h-64 md:h-full w-full md:w-1/2">
           <img
-            src={profileImage} // Ensure this points to the correct image
+            src={profileImage} 
             alt="Profile"
             className={`object-cover w-full h-full ${isArabic ? '.custom-clip-ar' : 'custom-clip'}`}
           />

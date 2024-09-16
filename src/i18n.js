@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import Testimonials from './components/Testimonials';
 
 const resources = {
     en: {
