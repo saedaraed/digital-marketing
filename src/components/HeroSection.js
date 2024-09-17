@@ -5,8 +5,8 @@ import '../i18n';
 import { useTranslation } from 'react-i18next';
 
 const Herosection = () => {
-  const [displayedText, setDisplayedText] = useState(''); // النص المعروض
-  const [index, setIndex] = useState(0); // مؤشر النص
+  const [displayedText, setDisplayedText] = useState('');
+  const [index, setIndex] = useState(0);
   const [isReversing, setIsReversing] = useState(false);
 
   const { t, i18n } = useTranslation();
@@ -17,35 +17,28 @@ const Herosection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isReversing) {
-        // عرض النص حرفًا بحرف
         if (index < text.length) {
           setDisplayedText((prev) => prev + text[index]);
           setIndex((prevIndex) => prevIndex + 1);
         } else {
-          // بعد الانتهاء من عرض النص، نبدأ في التراجع
           setIsReversing(true);
         }
       } else {
-        // التراجع من آخر حرف إلى أول حرف
         if (index > 0) {
           setDisplayedText((prev) => prev.slice(0, -1));
           setIndex((prevIndex) => prevIndex - 1);
         } else {
-          // بعد الانتهاء من التراجع، نبدأ الحركة من جديد
           setIsReversing(false);
         }
       }
-    }, 150); // التأخير بين كل حركة
+    }, 150); 
 
     return () => clearInterval(interval);
   }, [index, isReversing, text]);
 
   return (
     <div className={`relative h-screen flex flex-col items-center justify-start ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
-      {/* Navbar */}
       <Navbar />
-
-      {/* Hero Section */}
       <div className="flex flex-grow items-center justify-center w-full">
         <div
           className="absolute inset-0 bg-cover bg-center filter blur-[10px] fixed"
@@ -63,7 +56,6 @@ const Herosection = () => {
         ></div>
 
         <div className="relative z-10 text-center text-white">
-        {/* <h1 className="text-4xl font-bold text-white animate-fade-in">{displayedText}</h1> */}
 
           <h1 className="text-4xl font-bold mb-8 text-pink-500">{t('welcome')}</h1>
           <h2 className="text-white text-4xl text-[55px] text-center mb-6 font-bold flex items-center">{displayedText}</h2>

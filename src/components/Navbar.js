@@ -28,7 +28,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Links */}
+    
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="hover:text-pink-500">Home</a>
           <a href="#about" className="hover:text-pink-500">About</a>
@@ -37,14 +37,13 @@ const Navbar = () => {
           <a href="#contact" className="hover:text-pink-500">Contact</a>
         </div>
 
-        {/* "Hire Me" Button */}
         <div className="hidden md:block">
           <a href="#hireme" className="bg-pink-500 hover:bg-pink-700 text-white py-2 px-6 rounded-[5px] font-medium">
             Hire Me
           </a>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
+        
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -68,7 +67,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+   
       {isOpen && (
         <div className="md:hidden mt-4">
           <a href="#home" className="block py-2 text-center hover:text-pink-500">Home</a>

@@ -7,7 +7,6 @@ const Projects = () => {
   const isArabic = i18n.language === 'ar';
 
   const [projects, setProjects] = useState([]);
-  // console.log(projects , 'projects')
    useEffect(() => {
     fetch('https://66a93a86613eced4eba4d9e7.mockapi.io/api/projects/projects')
       .then((response) => response.json()) 
@@ -22,7 +21,7 @@ const Projects = () => {
 
   return (
     <section className={`bg-custom-dark py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
-      {/* Section Title */}
+
       <div className="text-center mb-12">
         <h2 className="text-pink-500 text-xl font-bold mb-2">{t('projectTitle')}</h2>
         <h1 className="text-white text-3xl font-bold">
@@ -30,7 +29,6 @@ const Projects = () => {
         </h1>
       </div>
 
-      {/* Project Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {projects.map((project) => (
           <div key={project.id} className="text-center">
