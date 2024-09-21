@@ -4,8 +4,8 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     en: {
         translation: {
-            welcome: "Hello, I am",
-            name: "Saed Mughari,",
+            welcome: "Hello!",
+            name: "Saed Mughari",
             job: "Digital Marketing",
             description: "I Identify The Most Efficient Ways To Grow A Business.",
             downloadCv: "Download CV",

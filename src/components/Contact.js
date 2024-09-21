@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ContactMe = () => {
+const ContactMe = ({id}) => {
   return (
-    <section
+    <section id={id}
       className="relative bg-cover bg-center bg-no-repeat h-[500px] flex items-center justify-center"
       style={{ backgroundImage: `url('/images/Group 5.png')` ,backgroundAttachment: 'fixed',
       }}
@@ -15,7 +15,7 @@ const ContactMe = () => {
         </h1>
         <a
           href="https://wa.me/970592191765" 
-          className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded-[5px]"
+          className="bg-pink-500 text-white font-medium py-2 px-4 rounded-[5px]"
         >
           Contact Me
         </a>
