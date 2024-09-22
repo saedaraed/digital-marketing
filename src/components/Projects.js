@@ -20,11 +20,11 @@ const Projects = () => {
 
 
   return (
-    <section className={`bg-custom-dark py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
+    <section className={` py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
 
       <div className="text-center mb-12">
         <h2 className="text-pink-500 text-xl font-bold mb-2">{t('projectTitle')}</h2>
-        <h1 className="text-white text-3xl font-bold">
+        <h1 className="text-black dark:text-white text-3xl font-bold">
           {t('sneakPeek')}
         </h1>
       </div>
@@ -37,7 +37,7 @@ const Projects = () => {
               alt={project.name}
               className="rounded-lg object-cover w-full h-72"
             />
-            <h3 className="text-white text-xl font-bold mt-4">{project.name}</h3>
+            <h3 className="text-black dark:text-white text-xl font-bold mt-4">{project.name}</h3>
           </div>
         ))}
       </div>

@@ -13,7 +13,7 @@ const About = ({ id }) => {
   });
   return (
     <section  id={id}
-    ref={ref} className={`bg-white dark:bg-custom-dark flex justify-center items-center py-16 px-8 font-hind opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out md:opacity-100 md:translate-y-0 ${isArabic ? 'arabic-font' : ''} ${inView ? 'animate-fadeIn' : 'opacity-0'}`} dir={isArabic ? 'rtl' : 'ltr'}>
+    ref={ref} className={`bg-white dark:bg-custom-dark flex justify-center items-center py-16 px-8 border-none font-hind opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out md:opacity-100 md:translate-y-0 ${isArabic ? 'arabic-font' : ''} ${inView ? 'animate-fadeIn' : 'opacity-0'}`} dir={isArabic ? 'rtl' : 'ltr'}>
       <div  className="bg-custom-dark dark:bg-white  max-w-6xl mx-auto flex flex-col md:flex-row items-center h-auto md:h-[704px]">
        
         <div className="px-4 sm:px-8 md:px-16 h-full w-full md:w-1/2 flex flex-col justify-center text-left py-8 md:py-0">
