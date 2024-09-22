@@ -26,21 +26,7 @@ const Navbar = () => {
           <path d="M28.0678 22.5305L14.344 13.1141V5L28.0678 13.1141L42.1924 5L41.5913 31.1454L34.0783 26.3371V18.5235L28.0678 22.5305Z" stroke="white" stroke-width="5" />
         </svg>
 
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-            className="sr-only"
-          />
-          <div className="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-pink-500 transition-all">
-            <div
-              className={`absolute top-[2px] left-[2px] w-5 h-5 bg-white rounded-full transition-transform ${
-                isDarkMode ? 'transform translate-x-5' : ''
-              }`}
-            ></div>
-          </div>
-        </label>
+     
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="text-black dark:text-white hover:text-pink-500 ">Home</a>
           <a href="#about" className="text-black dark:text-white hover:text-pink-500">About</a>
@@ -75,7 +61,21 @@ const Navbar = () => {
         </div>
         <div className="mr-6">
 
-
+        <label className="relative inline-flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+            className="sr-only"
+          />
+          <div className="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-pink-500 transition-all">
+            <div
+              className={`absolute top-[2px] left-[2px] w-5 h-5 bg-white rounded-full transition-transform ${
+                isDarkMode ? 'transform translate-x-5' : ''
+              }`}
+            ></div>
+          </div>
+        </label>
           <button
             onClick={() => switchLanguage('en')}
             className={`py-2 px-4 rounded-l ${i18n.language === 'en' ? 'bg-pink-500' : 'bg-gray-600'}`}
