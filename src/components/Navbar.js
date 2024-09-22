@@ -34,6 +34,8 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="text-black dark:text-white hover:text-pink-500 ">Home</a>
           <a href="#about" className="text-black dark:text-white hover:text-pink-500">About</a>
+          <a href="#services" className=" text-black dark:text-white hover:text-pink-500">Services</a>
+
           <a href="#projects" className=" text-black dark:text-white hover:text-pink-500">Projects</a>
           {/* <a href="#testimonials" className="text-black dark:text-white hover:text-pink-500">Testimonials</a> */}
           <a href="#contact" className="text-black dark:text-white hover:text-pink-500">Contact</a>
@@ -101,7 +103,9 @@ const Navbar = () => {
         <div className="md:hidden mt-4">
           <a href="#home" className="block py-2 text-center hover:text-pink-500">Home</a>
           <a href="#about" className="block py-2 text-center hover:text-pink-500">About</a>
+          <a href="#services" className="block py-2 text-center hover:text-pink-500">Services</a>
           <a href="#projects" className="block py-2 text-center hover:text-pink-500">Projects</a>
+
           {/* <a href="#testimonials" className="block py-2 text-center hover:text-pink-500">Testimonials</a> */}
           <a href="#contact" className="block py-2 text-center hover:text-pink-500">Contact</a>
 

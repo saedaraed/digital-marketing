@@ -7,9 +7,9 @@ import { FaClipboardList } from 'react-icons/fa';
 import { FaComments } from 'react-icons/fa';
 import { FaRocket } from 'react-icons/fa';
 
-const Services = () => {
+const Services = ({id}) => {
   return (
-    <section className=" py-16 px-8">
+    <section id={id} className=" py-16 px-8">
     {/* Title Section */}
     <div className="text-center mb-12">
       <h2 className="text-pink-500 text-xl font-bold mb-2">What The Special</h2>

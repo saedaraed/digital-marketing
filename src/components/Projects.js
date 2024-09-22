@@ -1,7 +1,7 @@
 import React, { useEffect, useState  } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Projects = () => {
+const Projects = ({id}) => {
 
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === 'ar';
@@ -20,7 +20,7 @@ const Projects = () => {
 
 
   return (
-    <section className={` py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
+    <section id={id} className={` py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
 
       <div className="text-center mb-12">
         <h2 className="text-pink-500 text-xl font-bold mb-2">{t('projectTitle')}</h2>
