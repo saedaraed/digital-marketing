@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { i18n } = useTranslation();
-  const [isDarkMode, setIsDarkMode] = useState(false); 
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const switchLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -26,7 +26,7 @@ const Navbar = () => {
           <path d="M28.0678 22.5305L14.344 13.1141V5L28.0678 13.1141L42.1924 5L41.5913 31.1454L34.0783 26.3371V18.5235L28.0678 22.5305Z" stroke="white" stroke-width="5" />
         </svg>
 
-     
+
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="text-black dark:text-white hover:text-pink-500 ">Home</a>
           <a href="#about" className="text-black dark:text-white hover:text-pink-500">About</a>
@@ -59,35 +59,36 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="mr-6">
+        <div className="flex gap-[10px]">
 
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-            className="sr-only"
-          />
-          <div className="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-pink-500 transition-all">
-            <div
-              className={`absolute top-[2px] left-[2px] w-5 h-5 bg-white rounded-full transition-transform ${
-                isDarkMode ? 'transform translate-x-5' : ''
-              }`}
-            ></div>
-          </div>
-        </label>
-          <button
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={isDarkMode}
+              onChange={toggleDarkMode}
+              className="sr-only"
+            />
+            <div className="w-11 h-6 bg-gray-300 dark:bg-gray-600 rounded-full peer peer-focus:ring-4 peer-focus:ring-pink-500 transition-all">
+              <div
+                className={`absolute top-[10px] left-[2px] w-5 h-5 bg-white rounded-full transition-transform ${isDarkMode ? 'transform translate-x-5' : ''
+                  }`}
+              ></div>
+            </div>
+          </label>
+          <div>   <button
             onClick={() => switchLanguage('en')}
             className={`py-2 px-4 rounded-l ${i18n.language === 'en' ? 'bg-pink-500' : 'bg-gray-600'}`}
           >
             English
           </button>
-          <button
-            onClick={() => switchLanguage('ar')}
-            className={`py-2 px-4 rounded-r ${i18n.language === 'ar' ? 'bg-pink-500' : 'bg-gray-600'}`}
-          >
-            العربية
-          </button>
+            <button
+              onClick={() => switchLanguage('ar')}
+              className={`py-2 px-4 rounded-r ${i18n.language === 'ar' ? 'bg-pink-500' : 'bg-gray-600'}`}
+            >
+              العربية
+            </button>
+          </div>
+
         </div>
       </div>
 

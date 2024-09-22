@@ -24,9 +24,12 @@ const Herosection = ({id}) => {
 
 
         <div className="relative z-10 text-left text-white w-1/2 text-left">
+        <div class="relative  overflow-hidden ">
+          <h1 className="text-4xl font-bold text-[45px] mb-6 text-pink-500 animate-marqueeDown">{t('welcome')}</h1>
+          </div>
 
-          <h1 className="text-4xl font-bold text-[45px] mb-6 text-pink-500">{t('welcome')}</h1>
-          <h2 className="dark:text-white text-black text-4xl text-[55px] text-left mb-2 font-bold">{t('name')}</h2>
+          <h2 className="dark:text-white text-black text-4xl text-[55px] text-left mb-2 font-bold ">{t('name')}</h2>
+          
           <h2 className="dark:text-white text-black text-4xl text-[25px] mb-2 font-bold">{t('job')}</h2>
 
           <p className="text-xl mb-12 text-[25px] dark:text-white text-black">

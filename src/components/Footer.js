@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'; // Icons
 
 const Footer = () => {
   return (
-    <footer className=" py-8 text-black dark:text-green">
+    <footer className=" py-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
 
         <div className="text-2xl font-bold"> <svg width="47" height="61" viewBox="0 0 47 61" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,11 +12,11 @@ const Footer = () => {
         </svg></div>
 
         <div className="flex space-x-6">
-          <a href="#home" className="hover:text-pink-500">Home</a>
-          <a href="#about" className="hover:text-pink-500">About</a>
-          <a href="#experience" className="hover:text-pink-500">Experience</a>
-          <a href="#testimonials" className="hover:text-pink-500">Testimonials</a>
-          <a href="#contact" className="hover:text-pink-500">Contact</a>
+          <a href="#home" className="hover:text-pink-500 text-black dark:text-white">Home</a>
+          <a href="#about" className="hover:text-pink-500 text-black dark:text-white">About</a>
+          <a href="#experience" className="hover:text-pink-500 text-black dark:text-white">Experience</a>
+          <a href="#testimonials" className="hover:text-pink-500 text-black dark:text-white">Testimonials</a>
+          <a href="#contact" className="hover:text-pink-500 text-black dark:text-white">Contact</a>
         </div>
 
 

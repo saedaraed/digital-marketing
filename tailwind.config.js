@@ -28,10 +28,16 @@ module.exports = {
           '0%': { transform: 'translateY(50px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        marqueeDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0%)' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
         slideUp: 'slideUp 1s ease-in-out',
+        marqueeDown: 'marqueeDown 2s linear 1',
+
 
       },
   
