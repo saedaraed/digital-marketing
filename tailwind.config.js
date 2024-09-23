@@ -16,6 +16,9 @@ module.exports = {
         'customlight': '-5px 5px 20px 5px rgba(0, 0, 0, 0.15)', 
 
       },
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(circle, #5c0067 0%, rgb(9,6,41) 100%)',
+      },
       fontFamily: {
         'hind': ['Hind', 'sans-serif'],
       },
@@ -32,11 +35,16 @@ module.exports = {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0%)' },
         },
+        pulseGrow: {
+          '0%': { transform: 'scale(0.5)', opacity: '1' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
         slideUp: 'slideUp 1s ease-in-out',
         marqueeDown: 'marqueeDown 2s linear 1',
+        pulseGrow: 'pulseGrow 2.5s ease-in-out infinite',
 
 
       },

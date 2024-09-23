@@ -23,9 +23,17 @@ const About = ({ id }) => {
           <h1 className={`" text-white dark:text-black  text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-relaxed" ${isArabic ? 'text-right' : 'text-left'}`}>
            {t('quote')}
           </h1>
-          <p className={`" text-gray-700 dark:text-gray-700 mb-4 text-[18px] sm:text-[20px]" ${isArabic ? 'text-right' : 'text-left'}`}>
+          <p className={`" text-gray-700 dark:text-gray-700 mb-8 text-[18px] sm:text-[20px]" ${isArabic ? 'text-right' : 'text-left'}`}>
            {t('informationAboutMe')}
           </p>
+          <div>     <a
+              href="/cv/Saed updated cv.pdf"
+              download="Saed updated cv.pdf"
+              className="bg-pink-500 text-white font-medium py-2 px-4 rounded-lg inline-block cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+              {t('downloadCv')}
+            </a></div>
+     
         </div>
 
         <div className="relative h-64 md:h-full w-full md:w-1/2">
