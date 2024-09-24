@@ -1,6 +1,5 @@
 import React from 'react';
 import '../index.css';
-import { FaThumbsUp, FaChartLine } from 'react-icons/fa';
 import { FaShareAlt } from 'react-icons/fa';
 import { FaGoogle } from 'react-icons/fa';
 import { FaClipboardList } from 'react-icons/fa';

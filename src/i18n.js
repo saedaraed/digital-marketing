@@ -15,7 +15,7 @@ const resources = {
             informationAboutMe: "A passionate digital marketing specialist with expertise in social media marketing, social media management, brand development, Google ads, content writing, email marketing, and social media ads.",
             projectTitle: "My Projects",
             sneakPeek:"sneak peek of my recent projects",
-            testimonials:"Testimonials",
+            certificates:"Certificates",
             testimonialsQuote:" What the clients say?",
 
             
@@ -35,7 +35,7 @@ const resources = {
             informationAboutMe: "متخصص متحمس في التسويق الرقمي يتمتع بخبرة في تسويق وسائل التواصل الاجتماعي وإدارة وسائل التواصل الاجتماعي وتطوير العلامة التجارية وإعلانات Google وكتابة المحتوى والتسويق عبر البريد الإلكتروني وإعلانات وسائل التواصل الاجتماعي.",
             projectTitle: "مشاريعي",
             sneakPeek:"نظرة خاطفة على مشاريعي الأخيرة",
-            testimonials:"اراء العملاء",
+            certificates:"الشهادات",
             testimonialsQuote:"ماذا يقولون العملاء",
 
         }
