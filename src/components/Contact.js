@@ -13,12 +13,18 @@ const ContactMe = ({ id }) => {
       }}
 
     >
-      <div className="text-center mb-12">
-        <h2 className="text-pink-500 text-xl font-bold mb-2">Contact</h2>
-        <h1 className="text-white text-3xl font-bold">
-          Get in touch
-        </h1>
-      </div>
+      <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
+          <div className=' mt-4'>
+            {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
+            <svg width="100%" height="100%" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+              <path className='opacity-[20%] inline-block' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
+            </svg>      </div>
+
+
+          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+           Contact
+          </h1>
+        </div>
 
       <div className="relative z-10 text-center text-white px-4">
         <h1 className="text-[25px] sm:text-[25px] md:text-[25px] font-medium mb-6 w-[70%] mx-auto">

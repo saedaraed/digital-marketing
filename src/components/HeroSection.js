@@ -27,7 +27,7 @@ const Herosection = ({id}) => {
       }`}
     >
       <div className="relative overflow-hidden">
-        <h1 className="text-3xl md:text-4xl font-bold text-pink-500 mb-6 animate-marqueeDown">
+        <h1 className=" text-stroke text-3xl md:text-4xl font-bold text-pink-500 mb-6 animate-marqueeDown">
           {t('welcome')}
         </h1>
       </div>

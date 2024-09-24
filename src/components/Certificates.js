@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Certificates = ({id}) => {
+const Certificates = ({ id }) => {
   const [testimonials, setTestimonials] = useState([])
   const [currentPage, setCurrentPage] = useState(0);
   const testimonialsPerPage = 1;
@@ -30,36 +30,43 @@ const Certificates = ({id}) => {
       style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}
     >
       <div className='container m-auto'>
-      {/* Section Title */}
-      <div className="text-center mb-12">
-        <h2 className="text-pink-500 text-xl font-bold mb-2">{t('certificates')}</h2>
-        <h1 className="text-white text-3xl font-bold">
-          {t('testimonialsQuote')}
-        </h1>
-      </div>
+        {/* Section Title */}
+        <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
+          <div className=' mt-4'>
+            {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
+            <svg width="100%" height="100%" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+              <path className='opacity-[20%] inline-block' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
+            </svg>      </div>
 
-      {/* Certificates Content */}
-   
-      <div className="flex justify-center mt-8 gap-5 md:flex-nowrap flex-wrap">
-        <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
-          <img src='/images/1676841483080.jpg' alt='' />
+
+          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+            {t('certificates')}
+          </h1>
         </div>
-        <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
-          <img src='/images/1676841483080.jpg' alt='' />
+
+
+        {/* Certificates Content */}
+
+        <div className="flex justify-center mt-8 gap-5 md:flex-nowrap flex-wrap">
+          <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+            <img src='/images/1676841483080.jpg' alt='' />
+          </div>
+          <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+            <img src='/images/1676841483080.jpg' alt='' />
+          </div>
+
         </div>
-     
-      </div>
-      <div className="flex justify-center mt-8 gap-5 w-100 md:flex-nowrap flex-wrap ">
-        <div className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
-          <img src='/images/1676841483080.jpg' alt='' />
+        <div className="flex justify-center mt-8 gap-5 w-100 md:flex-nowrap flex-wrap ">
+          <div className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+            <img src='/images/1676841483080.jpg' alt='' />
+          </div>
+          <div className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+            <img src='/images/1676841483080.jpg' alt='' />
+          </div>
+          <div className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+            <img src='/images/1676841483080.jpg' alt='' />
+          </div>
         </div>
-        <div className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
-          <img src='/images/1676841483080.jpg' alt='' />
-        </div>
-        <div className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
-          <img src='/images/1676841483080.jpg' alt='' />
-        </div>
-      </div>
       </div>
     </section>
   );

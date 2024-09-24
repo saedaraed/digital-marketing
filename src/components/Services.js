@@ -8,16 +8,20 @@ import { FaRocket } from 'react-icons/fa';
 
 const Services = ({id}) => {
   return (
-    <section id={id} className=" py-16 px-8">
+    <section id={id} className="bg-custom-radial  py-16 px-8">
     {/* Title Section */}
-    <div className="text-center mb-12">
-      <h2 className="text-pink-500 text-xl font-bold mb-2">What The Special</h2>
-      <h1 className="text-black dark:text-white text-3xl font-bold mb-4">
-        Want to boost your business growth? <br />
-        Solution is here
-      </h1>
-    </div>
+    <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
+          <div className=' mt-4'>
+            {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
+            <svg width="100%" height="100%" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+              <path className='opacity-[20%] inline-block' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
+            </svg>      </div>
 
+
+          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+            Services
+          </h1>
+        </div>
     {/* Service Boxes */}
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* First Row - 3 Columns */}

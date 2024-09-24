@@ -78,3 +78,9 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 .opacity-0 {
   opacity: 0;
 }
+
+.text-stroke {
+  /* @apply text-6xl text-center;  */
+  color: transparent; /* No fill */
+  -webkit-text-stroke: 2px #D718D0; /* Stroke color and width */
+}

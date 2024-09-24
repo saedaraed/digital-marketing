@@ -13,7 +13,7 @@ import Certificates from './components/Certificates';
 function App() {
 
   return (
-    <div className={`App bg-white dark:bg-custom-dark`} >
+    <div className={`App bg-white dark:bg-custom-radial min-h-screen`} >
   
       {/* <Navbar /> */}
       <Herosection id="herosection"/>
