@@ -8,7 +8,7 @@ import { FaRocket } from 'react-icons/fa';
 
 const Services = ({id}) => {
   return (
-    <section id={id} className="bg-custom-radial  py-16 px-8">
+    <section id={id} className="dark:bg-custom-radial  py-16 px-8">
     {/* Title Section */}
     <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
           <div className=' mt-4'>
@@ -18,7 +18,7 @@ const Services = ({id}) => {
             </svg>      </div>
 
 
-          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+          <h1 className="absolute z-100 text-black dark:text-white opacity-[20%] text-[65px] font-bold">
             Services
           </h1>
         </div>

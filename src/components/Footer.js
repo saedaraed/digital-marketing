@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'; // Icons
 
 const Footer = () => {
   return (
-    <footer className=" bg-custom-radial py-8">
+    <footer className=" dark:bg-custom-radial py-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
 
         <div className="text-2xl font-bold hidden dark:block"> <svg width="47" height="61" viewBox="0 0 47 61" fill="none" xmlns="http://www.w3.org/2000/svg">

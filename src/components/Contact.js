@@ -21,7 +21,7 @@ const ContactMe = ({ id }) => {
             </svg>      </div>
 
 
-          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+          <h1 className="absolute z-100 text-white opacity-[20%] text-[65px] font-bold">
            Contact
           </h1>
         </div>

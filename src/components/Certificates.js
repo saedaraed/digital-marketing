@@ -29,7 +29,7 @@ const Certificates = ({ id }) => {
       className={`py-16 px-8 bg-white bg-opacity-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}
       style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}
     >
-      <div className='container m-auto'>
+      <div className='container md:w-[80%] mx-auto '>
         {/* Section Title */}
         <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
           <div className=' mt-4'>
@@ -39,7 +39,7 @@ const Certificates = ({ id }) => {
             </svg>      </div>
 
 
-          <h1 className="absolute z-100 text-black dark:text-white dark:opacity-[20%] text-[65px] font-bold">
+          <h1 className="absolute z-100 text-black dark:text-white opacity-[20%] text-[65px] font-bold">
             {t('certificates')}
           </h1>
         </div>
