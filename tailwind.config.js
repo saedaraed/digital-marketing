@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   darkMode: 'class',
   theme: {
@@ -10,6 +10,10 @@ module.exports = {
         'pink-700': '#be185d',
         'blue-900': '#1e3a8a',
         'custom-dark': '#090629',
+      },
+      container: {
+        center: true,
+        padding: '2rem',
       },
       boxShadow: {
         'customdark': '-5px 5px 20px 5px rgba(255, 255, 255, 0.15)', 
