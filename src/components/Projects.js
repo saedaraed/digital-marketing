@@ -20,7 +20,7 @@ const Projects = ({id}) => {
 
 
   return (
-    <section id={id} className={` bg-custom-radial  py-16 px-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
+    <section id={id} className={` bg-custom-radial  py-16 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
 
      
       <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">

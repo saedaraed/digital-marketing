@@ -15,10 +15,13 @@ html.light {
   --btn-bg-color: black;
   --btn-text-color: white;
 } */
-
-body {
+ *{
   margin: 0;
   padding: 0;
+ }
+
+body {
+ 
   font-family: 'Tajawal', sans-serif;
 
   -webkit-font-smoothing: antialiased;
