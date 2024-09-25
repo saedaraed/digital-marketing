@@ -20,7 +20,7 @@ const Herosection = ({ id }) => {
     <div id={id} className={`relative h-screen flex flex-col items-center justify-start bg-white  dark:bg-custom-radial ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
 
       <Navbar />
-      <div className="container mx-auto flex flex-col md:flex-row flex-grow items-center justify-between md:mt-[-100px] mt-0 px-4">
+      <div className="container md:w-[80%] mx-auto flex flex-col md:flex-row flex-grow items-center justify-between md:mt-[-100px] mt-0 px-4">
         <div
           className={`relative z-10 w-full md:w-1/2 text-white ${isArabic ? 'text-right' : 'text-left'
             }`}
