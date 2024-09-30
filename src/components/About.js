@@ -23,12 +23,12 @@ const About = ({ id }) => {
           <div className="text-center flex  items-center  mb-12 relative inline-block">
             <div className=' mt-4'>     
                {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
-              <svg width="100%" height="100%" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+              <svg  className="w-48 h-8 md:w-[100%] md:h-[100%]" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
                 <path className='opacity-[20%]' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
               </svg>      </div>
 
 
-            <h1 className="absolute z-100 text-white dark:text-black opacity-[20%] dark:opacity-[20%] text-[65px] font-bold">
+            <h1 className="absolute z-100 text-white dark:text-black opacity-[20%] dark:opacity-[20%] md:text-[65px] text-[40px] font-bold">
               {t('aboutMe')}
             </h1>
           </div>
