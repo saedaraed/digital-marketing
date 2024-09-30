@@ -20,7 +20,7 @@ const Herosection = ({ id }) => {
     <div id={id} className={`relative h-screen flex flex-col items-center justify-start bg-white  dark:bg-custom-radial ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
 
       <Navbar />
-      <div className="container md:w-[80%] mx-auto flex flex-col md:flex-row flex-grow items-center justify-between md:mt-[-100px] mt-0 px-4">
+      <div className="container md:w-[80%] w-[90%] mx-auto flex flex-col md:flex-row flex-grow items-center justify-between md:mt-[-100px] mt-0 px-4">
         <div
           className={`relative z-10 w-full md:w-1/2 text-white ${isArabic ? 'text-right' : 'text-left'
             }`}
@@ -52,20 +52,20 @@ const Herosection = ({ id }) => {
             <a
               href="/cv/Saed updated cv.pdf"
               download="Saed updated cv.pdf"
-              className="bg-pink-500 text-white font-medium py-2 px-4 rounded-[5px] cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-pink-500 text-white font-medium inline-block py-2 px-4 rounded-[5px] cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl w-auto"
             >
               {t('downloadCv')}
             </a>
             <a
               href="#contact"
-              className="border border-pink-500 text-black dark:text-white font-medium py-2 px-4 rounded-[5px] cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="border border-pink-500 text-black inline-block dark:text-white font-medium py-2 px-4 rounded-[5px] cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl w-auto"
             >
               {t('contactMe')}
             </a>
           </div>
         </div>
 
-        <div className="relative w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
+        <div className="relative w-full md:w-1/2 flex justify-center mt-10 md:mt-0 ">
           <div className="relative h-[250px] w-[250px] md:h-[400px] md:w-[400px] border border-grey-500 rounded-full flex justify-center items-center">
             <div className="absolute h-[150px] w-[150px] md:h-[250px] md:w-[250px] bg-gray-500 rounded-full animate-pulseGrow"></div>
             <div className="absolute h-[200px] w-[200px] md:h-[300px] md:w-[300px] bg-pink-500 rounded-full animate-pulseGrow delay-200"></div>

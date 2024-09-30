@@ -18,6 +18,9 @@ const Navbar = () => {
       document.documentElement.classList.add('dark');
     }
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
   return (
     <nav className="bg-transparent text-white py-4  w-full z-50">
 
@@ -50,7 +53,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none"
+            className="text-black dark:text-white focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -103,16 +106,20 @@ const Navbar = () => {
 
 
       {isOpen && (
-        <div className="md:hidden mt-4">
-          <a href="#home" className="block py-2 text-center hover:text-pink-500">Home</a>
-          <a href="#about" className="block py-2 text-center hover:text-pink-500">About</a>
-          <a href="#services" className="block py-2 text-center hover:text-pink-500">Services</a>
-          <a href="#projects" className="block py-2 text-center hover:text-pink-500">Projects</a>
-          <a href="#certificates" className="block py-2 text-center hover:text-pink-500">Certificates</a>
-
-          {/* <a href="#testimonials" className="block py-2 text-center hover:text-pink-500">Testimonials</a> */}
-          <a href="#contact" className="block py-2 text-center hover:text-pink-500">Contact</a>
-
+        <div className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 backdrop-blur-lg z-40 flex flex-col items-center justify-center space-y-6 transform transition-all duration-500 ease-in-out"           style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(-100%)' }}
+>
+          <a href="#home" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">Home</a>
+          <a href="#about" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">About</a>
+          <a href="#services" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">Services</a>
+          <a href="#projects" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">Projects</a>
+          <a href="#certificates" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">Certificates</a>
+          <a href="#contact" onClick={closeMenu} className="text-white text-2xl hover:text-pink-500 transition-all duration-300">Contact</a>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-5 right-5 text-white text-3xl"
+          >
+            &times;
+          </button>
         </div>
       )}
     </nav>
