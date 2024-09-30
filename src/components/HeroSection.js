@@ -31,11 +31,11 @@ const Herosection = ({ id }) => {
             </h1>
           </div>
 
-          <h2 className="text-2xl md:text-5xl md:text-[55px] font-bold mb-3 dark:text-white text-black">
+          <h2 className="text-2xl md:text-5xl md:text-[55px] font-bold mb-3 dark:text-white text-black ">
             {t('name')}
           </h2>
 
-          <h2 className="text-lg md:text-2xl mb-7 tracking-[5px] md:tracking-[11px] dark:text-white text-black">
+          <h2 className={`text-lg md:text-2xl mb-7 tracking-[5px]  dark:text-white text-black ${isArabic ? 'md:tracking-[0px]' : 'md:tracking-[11px]'}`}>
             {t('job')}
           </h2>
 

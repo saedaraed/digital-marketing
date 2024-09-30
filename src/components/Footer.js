@@ -25,13 +25,13 @@ const Footer = () => {
 
 
         <div className="flex space-x-4">
-          <a href="https://www.facebook.com/saedmgharee" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white hover:text-pink-500 bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
+          <a href="https://www.facebook.com/saedmgharee" target="_blank" rel="noopener noreferrer" className="text-white bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
             <FaFacebookF size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/saedalmgharee/" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white hover:text-pink-500 bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
+          <a href="https://www.linkedin.com/in/saedalmgharee/" target="_blank" rel="noopener noreferrer" className="text-white bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
             <FaLinkedinIn size={24} />
           </a>
-          <a href="https://x.com/saed_mgharee" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white hover:text-pink-500 bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
+          <a href="https://x.com/saed_mgharee" target="_blank" rel="noopener noreferrer" className="text-white  bg-pink-500 flex justify-center items-center w-[35px] h-[35px] rounded-full">
             <FaTwitter size={24} />
           </a>
         </div>

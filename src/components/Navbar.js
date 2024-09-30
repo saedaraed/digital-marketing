@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const switchLanguage = (lng) => {
@@ -32,15 +33,15 @@ const Navbar = () => {
 
 
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="text-black dark:text-white hover:text-pink-500 ">Home</a>
-          <a href="#about" className="text-black dark:text-white hover:text-pink-500">About</a>
-          <a href="#services" className=" text-black dark:text-white hover:text-pink-500">Services</a>
+          <a href="#home" className="text-black dark:text-white hover:text-pink-500 ">{t('navbar.home')}</a>
+          <a href="#about" className="text-black dark:text-white hover:text-pink-500">{t('navbar.about')}</a>
+          <a href="#services" className=" text-black dark:text-white hover:text-pink-500">{t('navbar.services')}</a>
 
-          <a href="#projects" className=" text-black dark:text-white hover:text-pink-500">Projects</a>
-          <a href="#certificates" className="text-black dark:text-white hover:text-pink-500">Certificates</a>
+          <a href="#projects" className=" text-black dark:text-white hover:text-pink-500">{t('navbar.projects')}</a>
+          <a href="#certificates" className="text-black dark:text-white hover:text-pink-500">{t('navbar.certificates')}</a>
 
           {/* <a href="#testimonials" className="text-black dark:text-white hover:text-pink-500">Testimonials</a> */}
-          <a href="#contact" className="text-black dark:text-white hover:text-pink-500">Contact</a>
+          <a href="#contact" className="text-black dark:text-white hover:text-pink-500">{t('navbar.contact')}</a>
         </div>
 
 

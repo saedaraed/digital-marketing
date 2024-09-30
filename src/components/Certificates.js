@@ -2,28 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Certificates = ({ id }) => {
-  const [testimonials, setTestimonials] = useState([])
-  const [currentPage, setCurrentPage] = useState(0);
-  const testimonialsPerPage = 1;
-  useEffect(() => {
-    fetch('https://66a93a86613eced4eba4d9e7.mockapi.io/api/projects/testimonials')
-      .then(response => response.json())
-      .then((data) => {
-        setTestimonials(data)
-      })
-      .catch((error) => console.error('Error fetching testimonials:', error))
-  }, [])
 
-
-  // Function to handle page change
-  const handlePageChange = (pageIndex) => {
-    setCurrentPage(pageIndex);
-  };
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === 'ar';
 
+  const [certificate, setCertificate] = useState([])
+const[selectImage , setSelectImage]= useState(null)
+  useEffect(() => {
+    fetch('https://66a93a86613eced4eba4d9e7.mockapi.io/api/projects/certificates')
+      .then(response => response.json())
+      .then((data) => {
+        setCertificate(data)
+      })
+      .catch((error) => console.error('Error fetching testimonials:', error))
+  }, [])
+const handleclick =(imageSrc)=>{
+  setSelectImage(imageSrc)
+}
 
-  console.log('testimonials', testimonials)
+const handleCloseModal = () => {
+  setSelectImage(null);
+};
   return (
     <section id={id}
       className={`py-16 px-8 bg-white bg-opacity-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}
@@ -48,26 +47,38 @@ const Certificates = ({ id }) => {
         {/* Certificates Content */}
 
         <div className="flex justify-center mt-8 gap-5 md:flex-nowrap flex-wrap">
-          <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
-            <img src='/images/1676841483080.jpg' alt='' />
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 h-[400px]'>
+            <img src={certificate[0]?.image} alt='' className='w-[100%] h-[100%]' />
           </div>
-          <div className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className=' card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
 
         </div>
         <div className="flex justify-center mt-8 gap-5 w-100 md:flex-nowrap flex-wrap ">
-          <div className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
-          <div className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
-          <div className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
         </div>
       </div>
+      {selectImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+        >
+          <img src={selectImage} alt="Full-screen Certificate" className="max-w-full max-h-full" />
+          <button  onClick={handleCloseModal}
+            className="absolute top-5 right-5 text-white bg-gray-900 p-2 rounded"
+          >
+            Close
+          </button>
+        </div>
+      )}
     </section>
   );
 };

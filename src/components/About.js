@@ -13,7 +13,7 @@ const About = ({ id }) => {
   });
   return (
     <section id={id}
-      ref={ref} className={`bg-white dark:bg-custom-radial   flex justify-center items-center py-16 px-8 border-none font-hind opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out md:opacity-100 md:translate-y-0 ${isArabic ? 'arabic-font' : ''} ${inView ? 'animate-fadeIn' : 'opacity-0'}`} dir={isArabic ? 'rtl' : 'ltr'}>
+      ref={ref} className={`bg-white dark:bg-custom-radial   flex justify-center items-center py-16 px-8 border-none  ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}>
       <div className="bg-custom-dark dark:bg-white  max-w-6xl mx-auto flex flex-col md:flex-row items-center h-auto md:h-[704px]">
 
         <div className="px-4 sm:px-8 md:px-16 h-full w-full md:w-1/2 flex flex-col justify-center text-left py-8 md:py-0">
@@ -32,7 +32,7 @@ const About = ({ id }) => {
               {t('aboutMe')}
             </h1>
           </div>
-          <h1 className={`" text-white dark:text-black  text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-relaxed" ${isArabic ? 'text-right' : 'text-left'}`}>
+          <h1 className={`" text-white dark:text-black  text-2xl sm:text-3xl font-bold mb-4 leading-relaxed" ${isArabic ? 'text-right md:text-3xl '   : 'text-left md:text-4xl '}`}>
             {t('quote')}
           </h1>
           <p className={`" text-gray-700 dark:text-gray-700 mb-8 text-[18px] sm:text-[20px]" ${isArabic ? 'text-right' : 'text-left'}`}>

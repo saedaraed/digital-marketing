@@ -5,8 +5,12 @@ import { FaGoogle } from 'react-icons/fa';
 import { FaClipboardList } from 'react-icons/fa';
 import { FaComments } from 'react-icons/fa';
 import { FaRocket } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const Services = ({id}) => {
+  const { t, i18n } = useTranslation();
+
+  const isArabic = i18n.language === 'ar';
   return (
     <section id={id} className="dark:bg-custom-radial  py-16 px-8">
     {/* Title Section */}
@@ -19,7 +23,7 @@ const Services = ({id}) => {
 
 
           <h1 className="absolute z-100 text-black dark:text-white opacity-[20%] text-[65px] font-bold">
-            Services
+          {t('services.servicetitle')}
           </h1>
         </div>
     {/* Service Boxes */}
@@ -29,7 +33,7 @@ const Services = ({id}) => {
         <div className='bg-gray-500 bg-opacity-50 w-[110px] h-[110px] mx-auto rounded-full flex justify-center items-center mb-[20px]'> 
         <FaShareAlt className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />
         </div>
-        <h3 className="text-black dark:text-white text-xl font-bold mb-2">Social Media Advertising Campaigns and Management Conference</h3>
+        <h3 className="text-black dark:text-white text-xl font-bold mb-2"> {t('services.serviceone')}</h3>
       </div>
 
       <div className="bg-darkBlue rounded-lg hover:shadow-customlight dark:hover:shadow-customdark p-8 text-center transform transition-transform hover:-translate-y-10 border-[1px] border-pink-500 dark:border-white dark:border-opacity-50 border-opacity-50">
@@ -39,7 +43,7 @@ const Services = ({id}) => {
         <FaRocket className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />
         </div>
 
-        <h3 className="text-black dark:text-white text-xl font-bold mb-2">Helping startups and medium-sized enterprises improve their digital presence and increase their sales.</h3>
+        <h3 className="text-black dark:text-white text-xl font-bold mb-2">{t('services.servicestwo')}</h3>
       </div>
 
       <div className="bg-darkBlue rounded-lg hover:shadow-customlight dark:hover:shadow-customdark p-8 text-center transform transition-transform hover:-translate-y-10 border-[1px] border-pink-500 dark:border-white dark:border-opacity-50 border-opacity-50">
@@ -48,7 +52,7 @@ const Services = ({id}) => {
         <FaComments className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />
         </div>
 
-        <h3 className="text-black dark:text-white text-xl font-bold mb-2">Marketing Consulting</h3>
+        <h3 className="text-black dark:text-white text-xl font-bold mb-2">{t('services.servicesthree')}</h3>
       </div>
 
       {/* Second Row - 2 Columns Centered */}
@@ -57,7 +61,7 @@ const Services = ({id}) => {
 
         <FaClipboardList className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />
         </div>
-        <h3 className="text-black dark:text-white text-xl font-bold mb-2">Marketing plans</h3>
+        <h3 className="text-black dark:text-white text-xl font-bold mb-2">{t('services.servicesfour')}</h3>
       </div>
 
       <div className="md:col-span-1 bg-darkBlue rounded-lg hover:shadow-customlight dark:hover:shadow-customdark p-8 text-center transform transition-transform hover:-translate-y-10 border-[1px] border-pink-500 dark:border-white dark:border-opacity-50 border-opacity-50">
@@ -65,7 +69,7 @@ const Services = ({id}) => {
 
         <FaGoogle className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />
         </div>
-        <h3 className="text-black dark:text-white text-xl font-bold mb-2">Launch and manage advertising campaigns on Google platform</h3>
+        <h3 className="text-black dark:text-white text-xl font-bold mb-2">{t('services.servicesfive')}</h3>
       </div>
     </div>
   </section>
