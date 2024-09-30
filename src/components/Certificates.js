@@ -25,7 +25,7 @@ const handleCloseModal = () => {
 };
   return (
     <section id={id}
-      className={`py-16 px-8 bg-white bg-opacity-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}
+      className={`py-16 bg-white bg-opacity-8 ${isArabic ? 'arabic-font' : ''}`} dir={isArabic ? 'rtl' : 'ltr'}
       style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}
     >
       <div className='container md:w-[80%] mx-auto '>
@@ -47,22 +47,22 @@ const handleCloseModal = () => {
         {/* Certificates Content */}
 
         <div className="flex justify-center mt-8 gap-5 md:flex-nowrap flex-wrap">
-          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 h-[400px]'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 md:h-[400px] h-[300px]'>
             <img src={certificate[0]?.image} alt='' className='w-[100%] h-[100%]' />
           </div>
-          <div onClick={() => handleclick('/images/1676841483080.jpg')} className=' card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className=' card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 md:h-[400px] h-[300px]'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
 
         </div>
         <div className="flex justify-center mt-8 gap-5 w-100 md:flex-nowrap flex-wrap ">
-          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3 dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40 md:h-[270px] h-[300px]'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
-          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow md:w-1/3  dark:bg-custom-radial p-5 shadow-xl shadow-pink-500/40  md:h-[270px] h-[300px]'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
-          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40'>
+          <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hiddendark:bg-custom-radial flex-grow md:w-1/3  dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 md:h-[270px] h-[300px]'>
             <img src='/images/1676841483080.jpg' alt='' />
           </div>
         </div>

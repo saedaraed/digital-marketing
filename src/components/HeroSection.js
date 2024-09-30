@@ -35,7 +35,7 @@ const Herosection = ({ id }) => {
             {t('name')}
           </h2>
 
-          <h2 className={`text-lg md:text-2xl mb-7 tracking-[5px]  dark:text-white text-black ${isArabic ? 'md:tracking-[0px]' : 'md:tracking-[11px]'}`}>
+          <h2 className={`text-lg md:text-2xl mb-7 tracking-[5px]  dark:text-white text-black ${isArabic ? 'md:tracking-[0px] tracking-[0px]' : 'md:tracking-[11px] tracking-[0px]'}`}>
             {t('job')}
           </h2>
 
