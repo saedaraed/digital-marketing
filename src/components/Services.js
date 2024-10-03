@@ -13,10 +13,8 @@ const Services = ({id}) => {
   const isArabic = i18n.language === 'ar';
   return (
     <section id={id} className="dark:bg-custom-radial  py-16 px-8">
-    {/* Title Section */}
     <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
           <div className=' mt-4'>
-            {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
             <svg  className="w-48 h-8 md:w-[100%] md:h-[100%]" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
             <path className='opacity-[20%] inline-block' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
             </svg>      </div>
@@ -26,9 +24,7 @@ const Services = ({id}) => {
           {t('services.servicetitle')}
           </h1>
         </div>
-    {/* Service Boxes */}
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* First Row - 3 Columns */}
       <div className="bg-darkBlue rounded-lg hover:shadow-customlight dark:hover:shadow-customdark p-8 text-center transform transition-transform hover:-translate-y-10 border-[1px] border-pink-500 dark:border-white dark:border-opacity-50 border-opacity-50">
         <div className='bg-gray-500 bg-opacity-50 w-[110px] h-[110px] mx-auto rounded-full flex justify-center items-center mb-[20px]'> 
         <FaShareAlt className="text-6xl text-pink-500 dark:text-white mb-4 mx-auto" />

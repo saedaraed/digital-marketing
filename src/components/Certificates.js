@@ -29,10 +29,8 @@ const handleCloseModal = () => {
       style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}
     >
       <div className='container md:w-[80%] mx-auto '>
-        {/* Section Title */}
         <div className="text-center mb-12 flex justify-center items-center  mb-12 relative inline-block">
           <div className=' mt-4'>
-            {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
             <svg  className="w-48 h-8 md:w-[100%] md:h-[100%]" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
             <path className='opacity-[20%] inline-block' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
             </svg>      </div>
@@ -42,9 +40,6 @@ const handleCloseModal = () => {
             {t('certificates')}
           </h1>
         </div>
-
-
-        {/* Certificates Content */}
 
         <div className="flex justify-center mt-8 gap-5 md:flex-nowrap flex-wrap">
           <div onClick={() => handleclick('/images/1676841483080.jpg')} className='card rounded over-flow-hidden flex-grow w-1/2 dark:bg-custom-radial  p-5 shadow-xl shadow-pink-500/40 md:h-[400px] h-[300px]'>

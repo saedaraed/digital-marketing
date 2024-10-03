@@ -7,7 +7,7 @@ const About = ({ id }) => {
   const { t, i18n } = useTranslation();
 
   const isArabic = i18n.language === 'ar';
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
@@ -17,12 +17,9 @@ const About = ({ id }) => {
       <div className="bg-custom-dark dark:bg-white  max-w-6xl mx-auto flex flex-col md:flex-row items-center h-auto md:h-[704px]">
 
         <div className="px-4 sm:px-8 md:px-16 h-full w-full md:w-1/2 flex flex-col justify-center text-left py-8 md:py-0">
-          {/* <h2 className="text-pink-500 text-xl font-bold mb-7 border-b-4 border-gray-400 inline-block w-max">
-            {t('aboutMe')}
-          </h2> */}
+       
           <div className="text-center flex  items-center  mb-12 relative inline-block">
             <div className=' mt-4'>     
-               {/* <h2 className=" text-pink-500 text-xl font-bold text-[50px]">{t('aboutMe')}</h2> */}
               <svg  className="w-48 h-8 md:w-[100%] md:h-[100%]" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
                 <path className='opacity-[20%]' d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#D718D0" fill="transparent" stroke-width="3" />
               </svg>      </div>

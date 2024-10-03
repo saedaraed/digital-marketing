@@ -4,7 +4,6 @@ import { FaPhone ,FaEnvelope  } from 'react-icons/fa';
 
 const ContactMe = ({ id }) => {
   const { t, i18n } = useTranslation();
-  const isArabic = i18n.language === 'ar';
   return (
     <section id={id}
       className="relative bg-cover bg-center bg-no-repeat h-[500px] flex flex-col justify-center "
@@ -22,14 +21,14 @@ const ContactMe = ({ id }) => {
 
 
           <h1 className="absolute z-100 text-white opacity-[20%]  md:text-[65px] text-[40px] font-bold">
-           Contact
+           {t('contact')}
           </h1>
         </div>
 
       <div className="relative z-10 text-center text-white px-4">
         <h1 className="text-[20px] md:text-[25px] font-medium mb-6 md:w-[70%] w-[90%] mx-auto">
-          Let’s work together to elevate your brand! Contact me for a consultation        </h1>
-        <div className='flex md:flex-row flex-col md:items-center md:justify-center justify-start md:w-[100%] w-[90%] mx-auto gap-8 mb-8'>
+          {t('contactQuote')}        </h1>
+        <div className='flex md:flex-row flex-col md:items-center md:justify-center justify-start md:w-[100%] w-[80%] mx-auto gap-8 mb-8'>
           <div className='flex items-center gap-4'>
             <div>
               <FaPhone size={30} className='text-pink-500 '/>
@@ -53,7 +52,7 @@ const ContactMe = ({ id }) => {
           href="https://wa.me/970592191765"
           className="bg-pink-500 text-white font-medium py-2 px-4 rounded-[5px]"
         >
-          Contact Me
+          {t('contactMe')}
         </a>
       </div>
     </section>

@@ -4,13 +4,13 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      navbar:{
-        home:"Home",
-        about:"About",
-        services:"Services",
-        projects:"Projects",
-        certificates:"Certificates",
-        contact:"Contact"
+      navbar: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        projects: "Projects",
+        certificates: "Certificates",
+        contact: "Contact",
       },
       welcome: "Hello!",
       name: "Saed Mughari",
@@ -28,8 +28,12 @@ const resources = {
       sneakPeek: "sneak peek of my recent projects",
       certificates: "Certificates",
       testimonialsQuote: " What the clients say?",
+      contact: "Contact",
+      contactQuote:
+        "Let’s work together to elevate your brand! Contact me for a consultation",
+
       services: {
-        servicetitle:"services",
+        servicetitle: "services",
 
         serviceone:
           "Social Media Advertising Campaigns and Management Conference",
@@ -44,13 +48,13 @@ const resources = {
   },
   ar: {
     translation: {
-      navbar:{
-        home:"الرئيسية",
-        about:"عني",
-        services:"خدماتي",
-        projects:"مشاريعي",
-        certificates:"شهاداتي",
-        contact:"تواصل"
+      navbar: {
+        home: "الرئيسية",
+        about: "عني",
+        services: "خدماتي",
+        projects: "مشاريعي",
+        certificates: "شهاداتي",
+        contact: "تواصل",
       },
       welcome: "مرحبا، أنا",
       name: "سائد مغاري",
@@ -68,14 +72,20 @@ const resources = {
       sneakPeek: "نظرة خاطفة على مشاريعي الأخيرة",
       certificates: "الشهادات",
       testimonialsQuote: "ماذا يقولون العملاء",
+      contact: "تواصل",
+      contactQuote:
+        "دعونا نعمل معًا للارتقاء بعلامتك التجارية! اتصل بي للحصول على استشارة",
+
       services: {
-        servicetitle:"خدماتي",
-        serviceone: "حملات الإعلانات على وسائل التواصل الاجتماعي وإدارة المؤتمرات",
-        servicestwo: "مساعدة الشركات الناشئة والمتوسطة الحجم على تحسين حضورها الرقمي وزيادة مبيعاتها.",
+        servicetitle: "خدماتي",
+        serviceone:
+          "حملات الإعلانات على وسائل التواصل الاجتماعي وإدارة المؤتمرات",
+        servicestwo:
+          "مساعدة الشركات الناشئة والمتوسطة الحجم على تحسين حضورها الرقمي وزيادة مبيعاتها.",
         servicesthree: "الاستشارات التسويقية",
         servicesfour: "خطط التسويق",
         servicesfive: "إطلاق وإدارة الحملات الإعلانية على منصة جوجل",
-      }
+      },
     },
   },
 };
