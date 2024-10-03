@@ -15,7 +15,7 @@ const Footer = () => {
           <path d="M28.0678 22.5305L14.344 13.1141V5L28.0678 13.1141L42.1924 5L41.5913 31.1454L34.0783 26.3371V18.5235L28.0678 22.5305Z" stroke="#D718D0" stroke-width="5" />
         </svg></div>
 
-        <div className="flex space-x-6">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
           <a href="#home" className="hover:text-pink-500 text-black dark:text-white">Home</a>
           <a href="#about" className="hover:text-pink-500 text-black dark:text-white">About</a>
           <a href="#experience" className="hover:text-pink-500 text-black dark:text-white">Experience</a>

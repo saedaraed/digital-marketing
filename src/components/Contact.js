@@ -27,9 +27,9 @@ const ContactMe = ({ id }) => {
         </div>
 
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-[25px] sm:text-[25px] md:text-[25px] font-medium mb-6 md:w-[70%] w-[80%] mx-auto">
+        <h1 className="text-[20px] md:text-[25px] font-medium mb-6 md:w-[70%] w-[90%] mx-auto">
           Let’s work together to elevate your brand! Contact me for a consultation        </h1>
-        <div className='flex md:flex-row flex-col items-center justify-center gap-8 mb-8'>
+        <div className='flex md:flex-row flex-col md:items-center md:justify-center justify-start md:w-[100%] w-[90%] mx-auto gap-8 mb-8'>
           <div className='flex items-center gap-4'>
             <div>
               <FaPhone size={30} className='text-pink-500 '/>

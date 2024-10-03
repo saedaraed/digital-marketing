@@ -23,7 +23,7 @@ function App() {
       <Certificates id="certificates"/>
       <ContactMe id="contact"  />
       <Footer id="footer"/>
-      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4">
+      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4 md:block hidden">
         <Link to="herosection" smooth={true} duration={500} className="nav-dot" />
         <Link to="about" smooth={true} duration={500} className="nav-dot" />
         <Link to="services" smooth={true} duration={500} className="nav-dot" />
